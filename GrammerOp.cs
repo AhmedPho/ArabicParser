@@ -11,20 +11,19 @@ namespace ArabicParser
         public string grammer;
         public string LeftSide;
         public string RightSide;
-        List<string> MyTags;
+        public int ID;
+        public List<string> MyTags;
         public Boolean IsMaster;
-        public GrammerOp(string Mygrammer, Boolean isMaster)
+        public GrammerOp(string Mygrammer, Boolean isMaster , int id)
         {
             this.IsMaster = isMaster;
             RightSide = "";
             MyTags = new List<string>();
-            if(GetRightAndLeftSide(Mygrammer))
-            {
-
-            }
+            GetRightAndLeftSide(Mygrammer);
             this.grammer = Mygrammer;
+            this.ID = id;
         }
-        Boolean GetRightAndLeftSide(string Mygrammer)
+        void GetRightAndLeftSide(string Mygrammer)
         {
             string[] Tags = Mygrammer.Split(' ');
             LeftSide = Tags[0];
@@ -38,17 +37,7 @@ namespace ArabicParser
                 }
                 Index++;
             }
-            /*
-            int Index = 0;
-            foreach(char Liter in Mygrammer)
-            {
-                if (Liter == '=')
-                {
-
-                }
-                Index++;
-            }*/
-            return false;
+           
         }
 
     }
