@@ -189,5 +189,41 @@ namespace ArabicParser
                 textBox2.Text = textBox2.Text + gra + "\r\n";
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string[] grammers = textBox3.Text.Split(',');
+            DataSet1TableAdapters.WordsTableAdapter WordsTableAdapter1 = new DataSet1TableAdapters.WordsTableAdapter();
+            for (int i = 0; i < grammers.Length; i++)
+            {
+                if (grammers[i] != ",")
+                {
+                    WordsTableAdapter1.InsertQuery1(grammers[i]);
+                }
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSet1.Tags' table. You can move, or remove it, as needed.
+            this.tagsTableAdapter.Fill(this.dataSet1.Tags);
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

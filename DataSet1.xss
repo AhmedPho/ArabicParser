@@ -8,7 +8,7 @@
   <Shapes>
     <Shape ID="DesignTable:Grammers" ZOrder="1" X="567" Y="159" Height="153" Width="204" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
     <Shape ID="DesignTable:Tags" ZOrder="3" X="282" Y="174" Height="172" Width="220" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
-    <Shape ID="DesignTable:Words" ZOrder="2" X="30" Y="144" Height="210" Width="188" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
+    <Shape ID="DesignTable:Words" ZOrder="2" X="30" Y="144" Height="229" Width="205" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
   </Shapes>
   <Connectors />
 </DiagramLayout>
