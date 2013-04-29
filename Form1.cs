@@ -151,7 +151,7 @@ namespace ArabicParser
                             //    {
                             //        textBox2.Text = textBox2.Text + gra + "\r\n";
                             //    }
-                                    
+                                     
                             //}
                             /*
                             if (gr.MyTags.Count != GrammersPossible.Count)
